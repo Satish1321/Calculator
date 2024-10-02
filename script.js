@@ -6,7 +6,7 @@ function isValid(expression){
 
 }
 function btnOperation(event){
-    console.log("yes btn is clicked");
+   
 
     if(event.target.value=="="){
         if(isValid(ip.value)){
@@ -22,7 +22,7 @@ function btnOperation(event){
 
     }
     else if(event.target.value=="DEL"){
-        ip.value=ip.value.substring(0,length-1);
+        ip.value=ip.value.substring(0,ip.value.length-1);
     }
     else{
         ip.value+=event.target.value;
